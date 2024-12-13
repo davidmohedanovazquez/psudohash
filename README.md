@@ -6,6 +6,15 @@
 ## Purpose
 Psudohash is a password list generator for orchestrating brute force attacks and cracking hashes. It imitates certain password creation patterns commonly used by humans, like substituting a word's letters with symbols or numbers (leet), using char-case variations, adding a common padding before or after the main passphrase and more. It is keyword-based and highly customizable. 🎥 -> [Video Presentation](https://www.youtube.com/watch?v=oj3zjApOOGc)
 
+## Helper
+This script allows users to interactively generate and execute commands for psudohash.py. It simplifies the process of configuring keyword-based wordlists with additional options.
+To execute it:
+```bash
+python3 psudohash_helper.py
+```
+
+![image](./Screenshots/psudohash_helper.png)
+
 ## Pentesting Corporate Environments
 System administrators and other employees often use a mutated version of the Company's name to set passwords (e.g. Am@z0n_2022). This is commonly the case for network devices (Wi-Fi access points, switches, routers, etc), application or even domain accounts. With the most basic options, psudohash can generate a wordlist with all possible mutations of one or multiple keywords, based on common character substitution patterns (customizable), case variations, strings commonly used as padding and more. Take a look at the following example:  
 
